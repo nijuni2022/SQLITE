@@ -1,6 +1,6 @@
 from main import vcon
-import sqlite3
-from sqlite3 import Error
+#import sqlite3
+#from sqlite3 import Error
 
 def deletar(conexao, sql):
     try:
@@ -14,5 +14,5 @@ def deletar(conexao, sql):
         print("Registro removido")
 
 
-vsql="DELETE FROM tb_contatos WHERE N_IDCONTATO="
+vsql="DELETE FROM tb_contatos WHERE N_IDCONTATO"
 deletar(vcon,vsql)

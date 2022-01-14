@@ -1,6 +1,6 @@
 from main import vcon
-import sqlite3
-from sqlite3 import Error
+#import sqlite3
+#from sqlite3 import Error
 
 def atualizar(conexao, sql):
     try:
@@ -14,5 +14,5 @@ def atualizar(conexao, sql):
         print("Dados atualizados")
 
 
-vsql="UPDATE tb_contatos SET T_NOMECONTATO='Bruno' WHERE N_IDCONTATO=1"
+vsql="UPDATE tb_contatos SET N_IDCONTATO= 3 WHERE N_IDCONTATO=2"
 atualizar(vcon,vsql)
